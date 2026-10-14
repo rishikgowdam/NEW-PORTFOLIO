@@ -1,0 +1,85 @@
+
+/* General page styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Navigation bar */
+.navbar {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Main heading */
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Menu content */
+.menu-section {
+  background-color: #d9edf7;
+  padding: 20px;
+  min-height: 1000px;
+  margin-bottom: 20px;
+}
+
+.menu-section h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Mobile dropdown menu */
+#mobile-menu {
+  background-color: #f2f2f2;
+}
+
+#mobile-menu .navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mobile-menu .navbar-nav > li > a {
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+#mobile-menu .navbar-nav > li > a:hover {
+  background-color: #ddd;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    border-top: 1px solid #ddd;
+  }
+
+  .menu-section {
+    padding: 15px;
+  }
+}
+/* Keep the mobile menu hidden until the button is clicked */
+@media (max-width: 767px) {
+  #mobile-menu.collapse {
+    display: none;
+  }
+
+  #mobile-menu.collapse.in {
+    display: block;
+  }
+}
